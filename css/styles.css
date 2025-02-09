@@ -4392,7 +4392,6 @@ h2, h3, h4 {
   position: fixed;
   top: 0;
   left: 0;
-  right: 10;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.8);
@@ -4401,10 +4400,19 @@ h2, h3, h4 {
 }
 
 .modal-content {
-  max-width: 90%;
-  margin: 5% 5% 5% auto; /* Auto left margin to push the modal more to the right */
-  padding: 50px;
+  max-width: 80%;
+  margin: 5% auto;
+  padding: 20px;
   box-sizing: border-box;
+}
+
+/* Mobile-specific adjustments */
+@media (max-width: 468px) {
+  .modal-content {
+    max-width: 100%;
+    margin: 5% 2.5%; /* Ensures proper centering on small screens */
+    padding: 15px;
+  }
 }
 
 
