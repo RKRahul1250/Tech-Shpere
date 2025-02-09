@@ -1,0 +1,1275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>IT Service Website</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Font Awesome icons (free version)-->
+    <script
+      src="https://use.fontawesome.com/releases/v6.3.0/js/all.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Google fonts-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+
+    
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+
+  <script src="https://path-to-your-chatbot-script.js" async></script>
+
+  <body id="page-top">
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand" href="#page-top"
+          ><img src="assets/img/navbar-logo.svg" alt="..."
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          Menu
+          <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#team">Team</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <!-- Masthead-->
+    <header class="masthead">
+      <div class="container">
+        <div class="masthead-subheading">Step Into Innovation</div>
+        <div class="masthead-heading text-uppercase">
+          Your Digital Journey Starts Here!
+        </div>
+        <a
+          class="btn btn-primary btn-xl text-uppercase animated-button"
+          href="#services"
+          >Get Started</a
+        >
+      </div>
+    </header>
+
+    <style>
+      /* Service Section Animations */
+      .service-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+    
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+      }
+    
+      /* Smooth fade-in animations */
+      .service-card {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.7s ease forwards;
+      }
+    
+      .service-card:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+    
+      .service-card:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+    
+      .service-card:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+    
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    </style>
+    
+    <style>
+      /* Service Section Styling */
+      #services {
+        background: linear-gradient(145deg, #3a3a3a, #5e5b4a);
+        color: white;
+        padding: 60px 0;
+        border-radius: 0px;
+      }
+    
+      /* Smooth card animation with rounded corners */
+      .service-card {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        backdrop-filter: blur(5px);
+      }
+    
+      /* Hover effect */
+      .service-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 25px rgba(255, 255, 255, 0.1);
+      }
+    
+      /* Smooth fade-in animation */
+      .service-card {
+        opacity: 0;
+        transform: translateY(30px);
+        animation: fadeInUp 0.7s ease forwards;
+      }
+    
+      .service-card:nth-child(1) {
+        animation-delay: 0.2s;
+      }
+    
+      .service-card:nth-child(2) {
+        animation-delay: 0.4s;
+      }
+    
+      .service-card:nth-child(3) {
+        animation-delay: 0.6s;
+      }
+
+      .row.text-center {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px;
+       }
+    
+      @keyframes fadeInUp {
+        0% {
+          opacity: 0;
+          transform: translateY(30px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    
+      /* Text styles */
+      .section-heading {
+        font-size: 2.5rem;
+        color: #282727;
+      }
+    
+      .section-subheading {
+        color: #bba39a;
+      }
+    </style>
+    
+    <!-- Services Section with Enhanced Design -->
+    <section class="page-section" id="services">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">
+            <span class="highlighted-text">Services</span>
+          </h2>
+          <h3 class="section-subheading text-muted">
+            "Empowering Businesses with Cutting-Edge Tech Solutions."
+          </h3>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4 service-card">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-shopping-cart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Web Development</h4>
+            <p class="text-muted">
+              "Crafting user-centric, scalable, and high-performance web solutions tailored to your business needs."
+            </p>
+          </div>
+          <div class="col-md-4 service-card">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Responsive Design</h4>
+            <p class="text-muted">
+              "Delivering seamless and intuitive user experiences across all screen sizes and devices."
+            </p>
+          </div>
+          
+          <div class="col-md-4 service-card">
+            <span class="fa-stack fa-4x">
+              <i class="fas fa-circle fa-stack-2x text-primary"></i>
+              <i class="fas fa-lock fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="my-3">Web Security</h4>
+            <p class="text-muted">
+              "Protecting your digital assets with cutting-edge security solutions tailored to modern threats."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Portfolio Grid-->
+    <section class="page-section bg-light" id="portfolio">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Portfolio</h2>
+          <h3 class="section-subheading text-muted">
+            Explore how we've helped businesses thrive with innovative and
+            tailored IT solutions.
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 1-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal1"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/1.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Password Generator</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  web application
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 2-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal2"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/2.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">To-Do List</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Check list
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4">
+            <!-- Portfolio item 3-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal3"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/3.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Stop-Watch</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Finish
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+            <!-- Portfolio item 4-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal4"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/4.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Exploring</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Institutes
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+            <!-- Portfolio item 5-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal5"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/5.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Expense Tracker</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Analyze
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-sm-6">
+            <!-- Portfolio item 6-->
+            <div class="portfolio-item">
+              <a
+                class="portfolio-link"
+                data-bs-toggle="modal"
+                href="#portfolioModal6"
+              >
+                <div class="portfolio-hover">
+                  <div class="portfolio-hover-content">
+                    <i class="fas fa-plus fa-3x"></i>
+                  </div>
+                </div>
+                <img
+                  class="img-fluid"
+                  src="assets/img/portfolio/6.jpg"
+                  alt="..."
+                />
+              </a>
+              <div class="portfolio-caption">
+                <div class="portfolio-caption-heading">Weather App</div>
+                <div class="portfolio-caption-subheading text-muted">
+                  Weather Insights
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About-->
+    <section class="page-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">About</h2>
+          <h3 class="section-subheading text-muted">
+            "Empowering businesses with next-generation technology<br />
+            solutions for over a decade."
+          </h3>
+        </div>
+        <ul class="timeline">
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/1.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>2009-2011</h4>
+                <h4 class="subheading">Our Humble Beginnings</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Tech Sphere was born with a passion for providing custom web
+                  development and IT consulting services to small businesses.
+                  What started as a two-person venture quickly grew as we earned
+                  the trust of local clients with reliable and scalable
+                  solutions.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/2.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>March 2011</h4>
+                <h4 class="subheading">An Agency is Born</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Recognizing the demand for holistic IT services, we officially
+                  became Tech Sphere Solutions, offering a complete suite of
+                  services, including cloud migration, security architecture,
+                  and custom enterprise applications. Our commitment to
+                  innovation drove client success across industries.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/3.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>December 2015</h4>
+                <h4 class="subheading">Transition to Full Service</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  We embraced cutting-edge technologies, integrating AI-powered
+                  solutions, predictive analytics, and machine learning models
+                  into our projects. Our work transformed traditional IT
+                  infrastructures into dynamic and intelligent ecosystems.
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <img
+                class="rounded-circle img-fluid"
+                src="assets/img/about/4.jpg"
+                alt="..."
+              />
+            </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4>July 2020</h4>
+                <h4 class="subheading">Phase Two Expansion</h4>
+              </div>
+              <div class="timeline-body">
+                <p class="text-muted">
+                  Amid a world shifting toward digital transformation, Tech Sphere expanded globally, establishing partnerships across North America, Europe, and Asia-Pacific. Our teams now deliver 24/7 cloud support, cybersecurity services, and data-driven automation solutions to enterprises of all sizes.
+            </p>
+                </p>
+              </div>
+            </div>
+          </li>
+          <li class="timeline-inverted">
+            <div class="timeline-image">
+              <h4>
+                Be Part
+                <br />
+                Of Our
+                <br />
+                Story!
+              </h4>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+   
+    <!-- Team-->
+    <section class="page-section bg-light" id="team">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
+          <h3 class="section-subheading text-muted">
+            A dynamic group of innovators, problem-solvers, and tech enthusiasts
+            dedicated to delivering impactful solutions and driving your success
+          </h3>
+        </div>
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="assets/img/team/1.png"
+                alt="..."
+              />
+              <h4>Rk Ranhu</h4>
+              <p class="text-muted">Lead Designer</p>
+              <!-- Twitter Profile -->
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://x.com/Rkrahul341585"
+                target="_blank"
+                aria-label="RK Rahul Twitter Profile"
+              >
+                <i class="fab fa-twitter"></i>
+              </a>
+              |
+              <!-- GitHub Profile -->
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://github.com/RKRahul1250"
+                target="_blank"
+                aria-label="RK Rahul GitHub Profile"
+              >
+                <i class="fab fa-github"></i>
+              </a>
+              |
+
+               <!-- Chatbot Container -->
+      <div id="chatbot-widget" class="chatbot">
+        <div id="chatbot-header">
+                  <h3>TechSpher Assistant</h3>
+                  <button id="close-chatbot">X</button>
+        </div>
+          <div id="chatbot-messages"></div>
+                  <input id="chatbot-input" type="text" placeholder="Ask anything..." />
+      </div>
+
+<!-- Chatbot Toggle Button -->
+     <button id="chatbot-toggle">💬</button>
+              <!-- LinkedIn Placeholder -->
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="https://www.linkedin.com/in/rahul-karibilkar-723941255/"
+                aria-label="RK Rahul LinkedIn Profile"
+              >
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="assets/img/team/2.png"
+                alt="..."
+              />
+              <h4>Diana Petersen</h4>
+              <p class="text-muted">Lead Marketer</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              |
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              |
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Diana Petersen LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="team-member">
+              <img
+                class="mx-auto rounded-circle"
+                src="assets/img/team/3.jpg"
+                alt="..."
+              />
+              <h4>Larry Parker</h4>
+              <p class="text-muted">Lead Developer</p>
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker Twitter Profile"
+                ><i class="fab fa-twitter"></i
+              ></a>
+              |
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker Facebook Profile"
+                ><i class="fab fa-facebook-f"></i
+              ></a>
+              |
+              <a
+                class="btn btn-dark btn-social mx-2"
+                href="#!"
+                aria-label="Larry Parker LinkedIn Profile"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <p class="large text-muted">
+              "Driven by passion and innovation, our team is here to turn your ideas into reality and take your business to new heights."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Clients-->
+    <div class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"
+              ><img
+                class="img-fluid img-brand d-block mx-auto"
+                src="assets/img/logos/microsoft.svg"
+                alt="..."
+                aria-label="Microsoft Logo"
+            /></a>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"
+              ><img
+                class="img-fluid img-brand d-block mx-auto"
+                src="assets/img/logos/google.svg"
+                alt="..."
+                aria-label="Google Logo"
+            /></a>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"
+              ><img
+                class="img-fluid img-brand d-block mx-auto"
+                src="assets/img/logos/facebook.svg"
+                alt="..."
+                aria-label="Facebook Logo"
+            /></a>
+          </div>
+          <div class="col-md-3 col-sm-6 my-3">
+            <a href="#!"
+              ><img
+                class="img-fluid img-brand d-block mx-auto"
+                src="assets/img/logos/ibm.svg"
+                alt="..."
+                aria-label="IBM Logo"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact-->
+    <section class="page-section" id="contact">
+      <div class="container">
+        <div class="text-center">
+          <h2 class="section-heading text-uppercase">Contact Us</h2>
+          <h3 class="section-subheading text-muted">
+            "Have questions or ready to start your next project? <br>Get in touch with us <b>— we're here to help!"</b>
+          </h3>
+        </div>
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- * * SB Forms Contact Form * *-->
+        <!-- * * * * * * * * * * * * * * *-->
+        <!-- This form is pre-integrated with SB Forms.-->
+        <!-- To make this form functional, sign up at-->
+        <!-- https://startbootstrap.com/solution/contact-forms-->
+        <!-- to get an API token!-->
+        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+          <div class="row align-items-stretch mb-5">
+            <div class="col-md-6">
+              <div class="form-group">
+                <!-- Name input-->
+                <input
+                  class="form-control"
+                  id="name"
+                  type="text"
+                  placeholder="Your Name *"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="name:required">
+                  A name is required.
+                </div>
+              </div>
+              <div class="form-group">
+                <!-- Email address input-->
+                <input
+                  class="form-control"
+                  id="email"
+                  type="email"
+                  placeholder="Your Email *"
+                  data-sb-validations="required,email"
+                />
+                <div class="invalid-feedback" data-sb-feedback="email:required">
+                  An email is required.
+                </div>
+                <div class="invalid-feedback" data-sb-feedback="email:email">
+                  Email is not valid.
+                </div>
+              </div>
+              <div class="form-group mb-md-0">
+                <!-- Phone number input-->
+                <input
+                  class="form-control"
+                  id="phone"
+                  type="tel"
+                  placeholder="Your Phone *"
+                  data-sb-validations="required"
+                />
+                <div class="invalid-feedback" data-sb-feedback="phone:required">
+                  A phone number is required.
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group form-group-textarea mb-md-0">
+                <!-- Message input-->
+                <textarea
+                  class="form-control"
+                  id="message"
+                  placeholder="Your Message *"
+                  data-sb-validations="required"
+                ></textarea>
+                <div
+                  class="invalid-feedback"
+                  data-sb-feedback="message:required"
+                >
+                  A message is required.
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Submit success message-->
+          <!---->
+          <!-- This is what your users will see when the form-->
+          <!-- has successfully submitted-->
+          <div class="d-none" id="submitSuccessMessage">
+            <div class="text-center text-white mb-3">
+              <div class="fw-bolder">Form submission successfully done & sent to!</div>
+              <br />
+              <a href="https://www.TechSphere.com" target="_blank" rel="noopener noreferrer">
+                www.TechSphere.com
+              </a>
+            </div>
+          </div>
+          <!-- Submit error message-->
+          <!---->
+          <!-- This is what your users will see when there is-->
+          <!-- an error submitting the form-->
+          <div class="d-none" id="submitErrorMessage">
+            <div class="text-center text-danger mb-3">
+              Error sending message!
+            </div>
+          </div>
+          <!-- Submit Button-->
+          <div class="text-center">
+            <button
+              class="btn btn-primary btn-xl text-uppercase disabled"
+              id="submitButton"
+              type="submit"
+            >
+              Send Message
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer py-4">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-4 text-lg-start">
+            Copyright &copy; TechSphere 2025
+          </div>
+          <div class="col-lg-4 my-3 my-lg-0">
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="#!"
+              aria-label="Twitter"
+              ><i class="fab fa-twitter"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="#!"
+              aria-label="Facebook"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a
+              class="btn btn-dark btn-social mx-2"
+              href="#!"
+              aria-label="LinkedIn"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </div>
+          <div class="col-lg-4 text-lg-end">
+            <a class="link-dark text-decoration-none me-3" href="#!"
+              >Privacy Policy</a
+            >
+            <a class="link-dark text-decoration-none" href="#!">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Portfolio Modals-->
+ <!-- Portfolio item 1 modal popup -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-blur">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="assets/img/close-icon.svg" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details -->
+              <h2 class="text-uppercase">Random Password Generator</h2>
+              <p class="item-intro text-muted">A web application that generates secure, random passwords to enhance online security</p>
+              <img class="img-fluid d-block mx-auto modal-img-zoom" src="assets/img/portfolio/1.jpg" alt="Project Image" />
+              <p>
+                <h3>Project Idea</h3>
+                A secure and interactive web application that generates random passwords based on user preferences, ensuring online safety and password management.
+              </p>
+              <p>
+                <h3>Description</h3>
+                This project is designed with a user-friendly interface and includes a stylish neumorphic design.
+              </p>
+              <div class="project-features">
+                <h3>🔑 Features:</h3>
+                <ul>
+                  <li>🔐 <strong>Secure Passwords:</strong> Customizable length.</li>
+                  <li>⚙️ <strong>Character Preferences:</strong> Lowercase, uppercase, numbers.</li>
+                  <li>📋 <strong>Clipboard Copy:</strong> Convenient password copying.</li>
+                  <li>📊 <strong>Strength Indicator:</strong> Dynamic strength gauge.</li>
+                </ul>
+              </div>
+              <ul class="list-inline">
+                <li><strong>Client:</strong> GitHub</li>
+                <li><strong>Category:</strong> Security</li>
+                <li>
+                  <br>
+                  <strong>Project Link:</strong> 
+                  <a href="https://rkrahul1250.github.io/Random-Password-Generator/" target="_blank">Explore Project</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i> Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Portfolio item 2 modal popup -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-blur">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="assets/img/close-icon.svg" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details -->
+              <h2 class="text-uppercase">To-Do List</h2>
+              <p class="item-intro text-muted">Where productivity meets creativity — Keep your tasks sorted with style.
+              <img class="img-fluid d-block mx-auto modal-img-zoom" src="assets/img/portfolio/2.jpg" alt="Project Image" />
+              <p>
+                <h3>Project Idea</h3>
+                The project idea is to develop a visually appealing and user-friendly To-Do List web application that enhances productivity by allowing users to effortlessly manage tasks, track deadlines, set priorities, and retain data even after page refreshes.
+              </p>
+              <p>
+                <h3>Description</h3>
+                A sleek and feature-rich To-Do List web application with task management, deadline tracking, priority flags, and persistent local storage using HTML, CSS, and JavaScript.
+              </p>
+              <div class="project-features">
+                <h3>📋 Features:</h3>
+                <ul>
+                  <li>🖊️ <strong>Task Entry:</strong> Effortlessly add tasks with simple input fields.</li>
+                  <li>📅 <strong>Deadline Tracker:</strong> Never miss deadlines by adding timestamps to tasks.</li>
+                  <li>🛠️ <strong>Edit & Update:</strong> Modify tasks as priorities evolve.</li>
+                  <li>🔄 <strong>Persistent Data:</strong> Store tasks locally even after refreshing the page.</li>
+                  <li>✨ <strong>Stylish UI:</strong> Neumorphic design for a visually engaging experience.</li>
+                </ul>
+              
+                <h3>🔧 Technology Stack:</h3>
+                <ul>
+                  <li>💻 <strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                  <li>📂 <strong>Data Storage:</strong> Local Storage</li>
+                </ul>
+              
+                <h3>🛠️ Core Functionalities:</h3>
+                <ul>
+                  <li>📜 <strong>Task Listings:</strong> Seamlessly view all your added tasks in one place.</li>
+                  <li>✅ <strong>Completion Indicator:</strong> Mark tasks as completed and maintain productivity.</li>
+                  <li>📋 <strong>Priority Flags:</strong> Categorize tasks by their importance.</li>
+                  <li>💾 <strong>Data Persistence:</strong> Save your progress without worrying about data loss.</li>
+                </ul>
+              </div>
+              
+              <ul class="list-inline">
+                <li><strong>Client:</strong> GitHub</li>
+                <li><strong>Category:</strong> Security</li>
+                <li>
+                  <br>
+                  <strong>Project Link:</strong> 
+                  <a href=" https://rkrahul1250.github.io/To-Do-List-App/" target="_blank">Explore Project</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i> Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Portfolio item 3 modal popup -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-blur">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="assets/img/close-icon.svg" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details -->
+              <h2 class="text-uppercase">Stop-Watch</h2>
+              <p class="item-intro text-muted">Where productivity meets creativity — Keep your tasks sorted with style.
+              <img class="img-fluid d-block mx-auto modal-img-zoom" src="assets/img/portfolio/3.jpg" alt="Project Image" />
+              <p>
+                <h3>Project Idea</h3>
+                A sleek stopwatch app with real-time tracking and lap management.
+              </p>
+              <p>
+                <h3>Description</h3>
+                Features include start, pause, reset controls, smooth animations, and optimized performance for accurate time management.
+              </p>
+              <div class="project-features">
+                <h3>📋 Features:</h3>
+                <ul>
+                  <li>🕰️ <strong>Real-Time Timer:</strong> Keep track of hours, minutes, and seconds seamlessly.</li>
+                  <li>🔄 <strong>Lap Feature:</strong> Record multiple lap timings without affecting the main stopwatch.</li>
+                  <li>🎨 <strong>UI Animations:</strong> Smooth and visually pleasing transitions.</li>
+                  <li>⏯️ <strong>Control Buttons:</strong> Start, pause, and reset with user-friendly interactions.</li>
+                </ul>
+              
+                <h3>🔧 Technology Stack:</h3>
+                <ul>
+                  <li>💻 <strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                  <li>🎨 <strong>Design:</strong> Minimal UI with subtle animations</li>
+                </ul>
+              
+                <h3>⚙️ Core Functionalities:</h3>
+                <ul>
+                  <li>📜 <strong>Real-Time Updates:</strong> Accurate and dynamic time tracking.</li>
+                  <li>🕰️ <strong>Lap Management:</strong> Record, view, and reset laps effortlessly.</li>
+                  <li>🔧 <strong>Event-Driven Controls:</strong> Manage all stopwatch operations through event listeners.</li>
+                  <li>⚡ <strong>Optimized Performance:</strong> Smooth operations with minimal load.</li>
+                </ul>
+              </div>
+              
+              
+              <ul class="list-inline">
+                <li><strong>Client:</strong> GitHub</li>
+                <li><strong>Category:</strong> Security</li>
+                <li>
+                  <br>
+                  <strong>Project Link:</strong> 
+                  <a href=" https://rkrahul1250.github.io/stopwatch-app/" target="_blank">Explore Project</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i> Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <!-- Portfolio item 4 modal popup -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-blur">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="assets/img/close-icon.svg" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details -->
+              <h2 class="text-uppercase">Training & Placement Institute Finder</h2>
+              <p class="item-intro text-muted">💡 <b>Discover Your Learning Hub in Bangalore</b> </br>
+                A web platform designed to help students and job seekers easily discover top training and placement institutes in Bangalore. The application provides essential details and direct links to institute websites, making the search process simple and efficient.
+              <img class="img-fluid d-block mx-auto modal-img-zoom" src="assets/img/portfolio/4.jpg" alt="Project Image" />
+              <p>
+                <h3>Project Idea</h3>
+                Simplify the search for top training and placement institutes in Bangalore.
+              </p>
+              <p>
+                <h3>Description</h3>
+                A web platform that categorizes institutes by training domains and provides direct access to official websites. The project emphasizes a clean design and performance optimization for seamless browsing.
+              </p>
+              <div class="project-features">
+                <h3>🚀 Features:</h3>
+  <ul>
+    <li>📍 <strong>Bangalore-Specific Listings:</strong> Tailored to the local training and placement ecosystem.</li>
+    <li>🔗 <strong>Direct Navigation:</strong> Instant access to official institute websites.</li>
+    <li>📋 <strong>Categorized Content:</strong> Structured for user convenience.</li>
+    <li>⚡ <strong>Performance Optimization:</strong> Lightweight and responsive for faster browsing.</li>
+    <li>🎨 <strong>Elegant Design:</strong> Clean, professional interface for enhanced user engagement.</li>
+  </ul>
+
+  <h3>💻 Technology Stack:</h3>
+  <ul>
+    <li>💻 <strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+    <li>🎨 <strong>Design:</strong> Minimal UI with a focus on user experience</li>
+    <li>📂 <strong>Content Structure:</strong> Static listings optimized for easy updates</li>
+  </ul>
+
+  <h3>⚙️ Core Functionalities:</h3>
+  <ul>
+    <li>🏢 <strong>Institute Profiles:</strong> Clear details for faster decision-making.</li>
+    <li>📜 <strong>Organized Listings:</strong> Grouped by training categories for easy navigation.</li>
+    <li>🔗 <strong>Direct Website Links:</strong> One-click navigation to institute websites.</li>
+    <li>⚙️ <strong>Optimized Performance:</strong> Smooth and fast browsing experience.</li>
+  </ul>
+              </div>
+              
+              
+              <ul class="list-inline">
+                <li><strong>Client:</strong> GitHub</li>
+                <li><strong>Category:</strong> Security</li>
+                <li>
+                  <br>
+                  <strong>🌟 Project Link:</strong> 
+                  <a href=" https://rkrahul1250.github.io/Bangalore-Training-Institutes-List/" target="_blank">Explore Project</a>
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i> Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <!-- Portfolio item 5 modal popup -->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-blur">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="assets/img/close-icon.svg" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details -->
+              <h2 class="text-uppercase">Expense Tracker Web App</h2>
+              <p class="item-intro text-muted">inflation.
+              <img class="img-fluid d-block mx-auto modal-img-zoom" src="assets/img/portfolio/5.jpg" alt="Project Image" />
+              <p>
+                <h3>Project Idea</h3>
+                A web-based solution to track and manage daily expenses, offering financial insights through dynamic dashboards.
+              </p>
+              <p>
+                <h3>Description</h3>
+                The project focuses on helping users efficiently record and categorize financial transactions, visualize spending patterns, and maintain data persistently. With an intuitive UI, it simplifies expense management.
+              </p>
+              <div class="project-features">
+                <h3>📋 Features:</h3>
+                  <ul>
+                    <li>🖊️ <strong>Add Transactions:</strong> Seamlessly log income and expenses.</li>
+                    <li>📊 <strong>Dynamic Dashboard:</strong> Visual representation of monthly spending patterns.</li>
+                    <li>🔄 <strong>Category Filters:</strong> Organize transactions into categories for better analysis.</li>
+                    <li>🛠️ <strong>Edit & Delete:</strong> Modify or remove entries as needed.</li>
+                    <li>💾 <strong>Data Persistence:</strong> Local storage support for saving financial history.</li>
+                    <li>🎨 <strong>Clean UI:</strong> Neumorphic-inspired layout for an engaging user experience.</li>
+                  </ul>
+
+                  <h3>🔧 Technology Stack:</h3>
+                  <ul>
+                    <li>💻 <strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                    <li>📂 <strong>Data Handling:</strong> Local Storage</li>
+                  </ul>
+
+                  <h3>⚙️ Core Functionalities:</h3>
+                  <ul>
+                    <li>📜 <strong>Transaction Management:</strong> Add, view, and delete transactions.</li>
+                    <li>📈 <strong>Spending Analysis:</strong> Dynamic charts for better financial insights.</li>
+                    <li>📊 <strong>Real-Time Updates:</strong> Auto-update dashboard upon data entry.</li>
+                    <li>⚡ <strong>Performance Optimization:</strong> Clean and efficient code for smooth operations.</li>
+                  </ul>
+                </div>
+              
+              <ul class="list-inline">
+                <li><strong>Client:</strong> GitHub</li>
+                <li><strong>Category:</strong> Security</li>
+                <li>
+                  <br>
+                  <strong>Project :</strong> 
+                  <p>Under Development<p> 
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i> Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <!-- Portfolio item 6 modal popup -->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content bg-blur">
+      <div class="close-modal" data-bs-dismiss="modal">
+        <img src="assets/img/close-icon.svg" alt="Close modal" />
+      </div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <div class="modal-body">
+              <!-- Project details -->
+              <h2 class="text-uppercase">Weather Forecast</h2>
+              <p class="item-intro text-muted">Analytics.
+              <img class="img-fluid d-block mx-auto modal-img-zoom" src="assets/img/portfolio/6.jpg" alt="Project Image" />
+              <p>
+                <h3>Project Idea</h3>
+                A dynamic weather application designed to provide accurate, real-time weather information based on user location and search input.
+              </p>
+              <p>
+                <h3>Description</h3>
+                The application focuses on delivering comprehensive weather updates, including temperature, humidity, wind speed, and multi-day forecasts. The intuitive UI enhances user engagement with weather-themed animations.
+              </p>
+              <div class="project-features">
+                <h3>✨ Key Features:</h3>
+                  <ul>
+                    <li>🌍 <strong>Location-Based Weather:</strong> Automatically detects your location and displays current weather.</li>
+                    <li>🔄 <strong>Search Functionality:</strong> Find weather updates for any city worldwide.</li>
+                    <li>📋 <strong>Detailed Forecast:</strong> Includes temperature, humidity, wind speed, and weather conditions.</li>
+                    <li>📆 <strong>5-Day Forecast:</strong> Plan ahead with a detailed multi-day weather outlook.</li>
+                    <li>🎨 <strong>Interactive Design:</strong> Smooth UI with weather-themed animations.</li>
+                  </ul>
+
+                  <h3>🚀 Technology Stack:</h3>
+                  <ul>
+                    <li>💻 <strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+                    <li>📡 <strong>API Integration:</strong> OpenWeather API</li>
+                  </ul>
+
+                  <h3>⚙️ Core Functionalities:</h3>
+                  <ul>
+                    <li>🌡️ <strong>Real-Time Weather Updates:</strong> Displays accurate live weather information.</li>
+                    <li>📍 <strong>Location-Based Detection:</strong> Auto-detection for local weather.</li>
+                    <li>🔧 <strong>Dynamic Search:</strong> Search for weather details in any city.</li>
+                    <li>⚡ <strong>Optimized API Calls:</strong> Efficient handling of weather data for faster results.</li>
+                  </ul>
+                </div>
+                              
+                              
+              <ul class="list-inline">
+                <li><strong>Client:</strong> GitHub</li>
+                <li><strong>Category:</strong> Security</li>
+                <li>
+                  <br>
+                  <strong>Project :</strong> 
+                  <p>Under Development<p> 
+                </li>
+              </ul>
+              <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-xmark me-1"></i> Close Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/scripts.js"></script>
+    
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  </body>
+</html>
