@@ -4324,6 +4324,112 @@ textarea.form-control-lg {
 }
 
 
+.modal-img-zoom {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .modal-dialog {
+    width: 90%;
+    margin: 30px auto;
+  }
+}
+
+
+
+
+
+
+/* Modal Padding */
+.modal-content {
+  padding: 30px;
+}
+
+/* Modal Body Padding */
+.modal-body {
+  padding: 20px;
+}
+
+/* Portfolio Item Padding */
+.portfolio-item {
+  padding: 20px;
+}
+
+/* General Padding for Sections */
+section {
+  padding: 50px 0; /* Padding for top and bottom */
+}
+
+/* Padding for Containers */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* Padding for Headers */
+h2, h3, h4 {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+/* Padding for Buttons */
+.btn {
+  padding: 12px 24px; /* Adjusts the padding inside the button */
+}
+
+/* Padding for Images */
+.img-fluid {
+  padding: 10px;
+}
+
+/* Padding for Modal Close Button */
+.close-modal {
+  padding: 15px;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  box-sizing: border-box;
+}
+
+.modal-content {
+  max-width: 90%;
+  margin: 5% 5% 5% auto; /* Auto left margin to push the modal more to the right */
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 .card > hr {
