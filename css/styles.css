@@ -4284,38 +4284,45 @@ textarea.form-control-lg {
   border-radius: var(--bs-card-border-radius);
 }
 
-/* Container for the service cards */
-.service-card-container {
+/* Service section container */
+.service-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px; /* Adjust gap for horizontal and vertical spacing */
-  justify-content: space-between; /* Distribute space horizontally */
-  align-items: flex-start; /* Align items at the top */
+  gap: 20px;  /* Add space between cards */
+  justify-content: center;
 }
 
-/* Service Card */
+/* Each card */
 .service-card {
   background-color: rgba(255, 255, 255, 0.1);
   padding: 30px;
   border-radius: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   backdrop-filter: blur(5px);
-  width: calc(30% - 20px); /* Adjust width to take up 3 cards per row */
-  box-sizing: border-box; /* Ensure padding does not affect width */
+  flex: 1 1 300px; /* Makes each card flexible with a minimum width of 300px */
+  max-width: 400px; /* Prevents cards from getting too wide */
 }
 
-/* For smaller screen sizes, you can adjust the card width */
+/* For mobile screens */
 @media (max-width: 768px) {
+  .service-container {
+    justify-content: space-between; /* Spread the cards evenly */
+  }
+
   .service-card {
-    width: calc(100% - 20px); /* 2 cards per row on medium screens */
+    flex: 1 1 100%; /* Makes each card take full width on small screens */
+    max-width: 100%;
+    padding: 20px; /* Reduce padding for better fitting */
   }
 }
 
+/* For very small screens (mobile) */
 @media (max-width: 480px) {
   .service-card {
-    width: 100%; /* 1 card per row on small screens */
+    padding: 15px; /* Further reduce padding on very small screens */
   }
 }
+
 
 
 
