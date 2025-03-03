@@ -1,0 +1,159 @@
+.hero-section {
+    /* background: linear-gradient(to bottom, #f8f9fa, #e9ecef); */
+    margin-bottom: 2rem;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    /* background-color: red; */
+}
+
+/* Hero Image */
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 500px;
+    animation: float 3s ease-in-out infinite;
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Hero Content */
+.hero-content {
+    flex: 1;
+    text-align: left;
+    padding: 20px;
+}
+
+.gradient-text {
+    font-family: 'Molle', cursive;
+    background: linear-gradient(45deg, #8592f3, #252425);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+}
+
+h1.gradient-text {
+    font-size: clamp(2.5rem, 4vw, 4.5rem);
+    margin-bottom: 0.5rem;
+    animation-delay: 0.3s;
+}
+
+h2.gradient-text {
+    font-size: clamp(2rem, 3.5vw, 4rem);
+    margin-bottom: 1rem;
+    animation-delay: 0.6s;
+}
+
+p.gradient-text {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    animation-delay: 0.9s;
+}
+
+.hero-buttons {
+    opacity: 0;
+    animation: fadeInUp 1s ease forwards;
+    animation-delay: 1.2s;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes gradientFlow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.gradient-text:hover {
+    background-size: 200% auto;
+    
+}
+
+/* Keep your existing media queries */
+@media screen and (max-width: 1200px) {
+    /* ... existing code ... */
+}
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-container {
+        flex-direction: column;
+        /* Stack items vertically */
+        text-align: center;
+    }
+
+    .hero-image {
+        order: -1;
+        /* Moves the image to the top */
+        margin-bottom: 20px;
+    }
+
+    .hero-content {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-buttons a {
+        width: 80%;
+    }
+}

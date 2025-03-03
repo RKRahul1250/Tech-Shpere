@@ -1,0 +1,96 @@
+Standard Retail Page Styling
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+.container {
+  max-width: 100%; /* Ensures no extra space */
+}
+
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Ensures full width without overflow */
+}
+
+.retail-page {
+  font-family: 'Roboto', Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Hero Section (Banner) */
+.Retail-section {
+  background: linear-gradient(180deg, #2C3E50, #4A6076, #dee2e6), 
+              repeating-linear-gradient(45deg, rgba(255,255,255,0.1) 0px, rgba(255,255,255,0.1) 10px, transparent 10px, transparent 20px);
+  color: white;
+  padding: 4rem 0;
+  text-align: center;
+}
+
+
+.Retail-section h2 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+/* Buttons */
+.btn-primary {
+  /* background-color: #E67E22; */
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  /* border-radius: 25px; */
+}
+
+.btn-primary:hover {
+  background-color: #D35400;
+}
+
+/* Cards */
+.card, .feature-card, .solution-card {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: none;
+  background-color: white;
+}
+
+.card:hover, .feature-card:hover, .solution-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Icons */
+.card-icon {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(230, 126, 34, 0.1);
+  border-radius: 50%;
+  margin: 0 auto 1.5rem;
+}
+
+/* Footer */
+.footer {
+  background-color: #2C3E50;
+  color: white;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .Retail-section {
+    padding: 2rem 0;
+  }
+  .feature-card, .solution-card {
+    padding: 1rem;
+  }
+}

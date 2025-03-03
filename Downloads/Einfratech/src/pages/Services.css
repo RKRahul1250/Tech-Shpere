@@ -1,0 +1,123 @@
+/* Services Section */
+.services {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Section Title */
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.section-title p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Services Grid */
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Service Icons */
+.service-item .icon {
+    font-size: 2rem;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+}
+
+/* Icon Background Colors */
+.item-cyan .icon { background-color: #00bcd4; }
+.item-orange .icon { background-color: #ff9800; }
+.item-teal .icon { background-color: #009688; }
+.item-red .icon { background-color: #e91e63; }
+.item-indigo .icon { background-color: #3f51b5; }
+.item-pink .icon { background-color: #ff4081; }
+
+/* Service Content */
+.service-content {
+    text-align: left;
+}
+
+.service-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-content p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Read More Link */
+.read-more {
+    color: #007bff;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.read-more:hover {
+    color: #0056b3;
+}
+
+.read-more i {
+    margin-left: 5px;
+}
+
+/* Scroll to Top Button */
+.scroll-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #007bff;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, background 0.3s ease-in-out;
+}
+
+.scroll-top:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .service-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .service-item .icon {
+        margin-bottom: 10px;
+    }
+}

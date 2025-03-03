@@ -1,0 +1,623 @@
+@import url('https://fonts.googleapis.com/css2?family=Molle:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+.education-root {
+    width: 100%;
+    min-height: 100vh;
+}
+
+.education-root .education-page {
+    font-family: 'Molle', cursive;
+    overflow-x: hidden;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+.education-root .education-page::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 0;
+}
+
+
+
+.education-root .education-page > * {
+    position: relative;
+    z-index: 1;
+}
+
+.education-root .hero-section {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.education-root .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 255, 255, 0.1),
+        rgba(0, 0, 0, 0.7)
+    );
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    z-index: 1;
+}
+
+.education-root .hero-content {
+    position: relative;
+    
+    z-index: 2;
+    max-width: 800px;
+    padding: 0 20px;
+}
+
+.education-root .hero-content h1 {
+    font-size: 3.5rem;
+    color: white;
+    font-weight: 400;
+    margin-bottom: 1.5rem;
+    line-height: 1.4;
+    animation: fadeOut 0.8s ease-in-out;
+}
+
+.education-root .hero-content p {
+    font-size: 1.6rem;
+    color: white;
+    margin-bottom: 2rem;
+    opacity: 0.9;
+    line-height: 1.8;
+    animation: fadeOut 0.8s ease-in-out 0.3s;
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.education-root .cta-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 50px;
+    background: white;
+    color: #4299e1;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.education-root .stats-section {
+    padding: 80px 0;
+    background: rgba(255, 255, 255, 0.8);
+    
+}
+
+
+
+.education-root .stats-container {
+    max-width: 1200px;
+    
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 0 20px;
+}
+
+.education-root .stat-card {
+    background: rgb(244, 241, 241);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.education-root .stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.education-root .stat-number {
+    font-size: 3rem;
+    color: #4299e1;
+    margin-bottom: 10px;
+}
+
+.education-root .stat-text {
+    font-size: 1.2rem;
+    color: #4a5568;
+}
+
+.education-root .programs-section {
+    padding: 100px 20px;
+    background-image: url('/images/hero-bg-light.webp');
+    text-align: center;
+}
+
+.education-root .programs-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 50px;
+}
+
+.education-root .programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-root .program-card {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.education-root .program-card:hover {
+    transform: translateY(-10px);
+}
+
+.education-root .program-card h3 {
+    font-size: 1.8rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.education-root .program-card p {
+    color: #4a5568;
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.education-root .program-card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-root .program-card ul li {
+    padding: 10px 0;
+    color: #4a5568;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.education-root .features-section {
+    padding: 100px 20px;
+    background-image: url('/images/hero-bg-light.webp');
+    text-align: center;
+}
+
+.education-root .features-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 50px;
+}
+
+.education-root .features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-root .feature-card {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.education-root .feature-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: rgba(66, 153, 225, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 25px;
+}
+
+.education-root .feature-icon-wrapper i {
+    font-size: 2.5rem;
+}
+
+.education-root .feature-details-list {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+    margin-top: 20px;
+}
+
+.education-root .feature-details-list li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+    font-size: 1.1rem;
+    color: #4a5568;
+}
+
+.education-root .testimonials-section {
+    padding: 100px 20px;
+    background-image: url('/images/hero-bg-light.webp');
+    text-align: center;
+}
+
+.education-root .testimonials-section h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 50px;
+}
+
+.education-root .testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-root .testimonial-card {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    text-align: left;
+}
+
+.education-root .testimonial-image {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.education-root .testimonial-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.education-root .testimonial-content {
+    flex: 1;
+}
+
+.education-root .testimonial-content p {
+    font-size: 1.2rem;
+    color: #4a5568;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.education-root .testimonial-content h4 {
+    font-size: 1.3rem;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.education-root .testimonial-content span {
+    color: #718096;
+    font-size: 1.1rem;
+}
+
+.education-root .interactive-section {
+    padding: 100px 20px;
+    background-image: url('/images/aboutus1.jpg');
+    
+}
+
+.education-root .interactive-content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.education-root .text-content h2 {
+    font-size: 2.5rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.education-root .text-content p {
+    font-size: 1.3rem;
+    color: #4a5568;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.education-root .learning-tools {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.education-root .tool-item {
+    background: rgb(214, 209, 209);
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.education-root .tool-item.active {
+    background: #4299e1;
+    color: white;
+    transform: scale(1.05);
+}
+
+.education-root .tool-item i {
+    font-size: 1.8rem;
+}
+
+.education-root .tool-details {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    margin-top: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-root .details-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin: 30px 0;
+}
+
+.education-root .features-list,
+.education-root .benefits-list {
+    background: rgba(213, 224, 232, 0.8);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.education-root .features-list h4,
+.education-root .benefits-list h4 {
+    font-size: 1.4rem;
+    color: #2d3748;
+    margin-bottom: 20px;
+}
+
+.education-root .features-list ul,
+.education-root .benefits-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.education-root .features-list li,
+.education-root .benefits-list li {
+    font-size: 1.1rem;
+    color: #4a5568;
+    padding: 12px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.education-root .tool-details img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.education-root .contact-section {
+    padding: 100px 20px;
+    background: linear-gradient(135deg, #707274, #2f375c);
+    color: white;
+    text-align: center;
+}
+
+.education-root .contact-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.education-root .contact-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.education-root .contact-content p {
+    font-size: 1.3rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.education-root .contact-button {
+    padding: 15px 40px;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.education-root .contact-button:hover {
+    background: white;
+    color: #4299e1;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@media (max-width: 1024px) {
+    .education-root .interactive-content {
+        flex-direction: column;
+    }
+    
+    .education-root .details-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-root .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .education-root .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .education-root .testimonial-card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .education-root .programs-grid,
+    .education-root .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .education-root .tool-details img {
+        height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .education-root .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .education-root .cta-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .education-root .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .education-root .stat-card {
+        padding: 20px;
+    }
+
+    .education-root .feature-icon-wrapper {
+        width: 60px;
+        height: 60px;
+    }
+
+    .education-root .feature-icon-wrapper i {
+        font-size: 1.8rem;
+    }
+
+    .education-root .tool-item {
+        padding: 15px;
+    }
+
+    .education-root .tool-item i {
+        font-size: 1.5rem;
+    }
+
+    .education-root .tool-item span {
+        font-size: 1rem;
+    }
+
+    .education-root .contact-button {
+        padding: 12px 30px;
+        font-size: 1rem;
+    }
+
+    .education-root .text-content h2 {
+        font-size: 2rem;
+    }
+
+    .education-root .text-content p {
+        font-size: 1.1rem;
+    }
+
+    .education-root .features-list h4,
+    .education-root .benefits-list h4 {
+        font-size: 1.2rem;
+    }
+
+    .education-root .features-list li,
+    .education-root .benefits-list li {
+        font-size: 1rem;
+    }
+}
